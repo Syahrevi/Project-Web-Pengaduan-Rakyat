@@ -22,16 +22,26 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('welcome_message');
 	}
-		public function about()
+	public function rakyat()
 	{
-		// fungsi untuk me-load view about.php
-		$this->load->view('about');
+		$this->load->view('rakyat');
 	}
 
-	public function contact()
+	public function admin()
 	{
-		// fungsi untuk me-load view contact.php
-		$this->load->view('contact');
+			$this->load->admin('login');
+	}
+	public function register()
+	{
+		$this->load->view('register');
+	}
+	public function overview()
+	{
+		$this->load->view('overview');
+	}
+	public function form()
+	{
+		$this->load->view('form');
 	}
 
 }
